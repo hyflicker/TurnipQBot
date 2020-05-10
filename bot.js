@@ -19,7 +19,7 @@ var config = {
     identity: {
         username: "turnipqbot",
         // get yours at http://twitchapps.com/tmi
-        password: "oauth:6y4nvh2dt60schglzmmpk7mucz73qn"
+        password: "oauth:"
     },
     channels: [channelName]
 }
