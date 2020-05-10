@@ -1,12 +1,9 @@
 const tmi = require("tmi.js")
 
 
-var channelName = "HyFlicker"
+var channelName = "Stream Bot Will Enter"
 
 var prefix = "!"
-
-
-
 
 var config = {
     options: {
@@ -17,9 +14,9 @@ var config = {
         reconnect: true
     },
     identity: {
-        username: "turnipqbot",
+        username: "BotName",
         // get yours at http://twitchapps.com/tmi
-        password: "oauth:"
+        password: "Enter OuathCode Here from ^ "
     },
     channels: [channelName]
 }
@@ -46,9 +43,10 @@ if (message == ("LUL"))
         client.say(channel, "LUL") }
 
 
-     if(user['mod'] === false){
-         if(message.includes("www.") || message.includes(".com")){
-             client.timeout(channel, sender, 30, "Please refrain from posting links.")
+let sender = user['display-name']
+if(user['mod'] === false){
+    if(message.includes("www.") || message.includes(".com")){
+        client.timeout(channel, sender, 30, "Please refrain from posting links.")
          }
      }
         // cmd handler
@@ -63,4 +61,5 @@ if (message == ("LUL"))
         
 
 })
+
 
