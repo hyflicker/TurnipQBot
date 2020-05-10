@@ -1,0 +1,17 @@
+{
+  "name": "turnipbot",
+  "version": "1.0.0",
+  "description": "Turnip Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "bot.js"
+  },
+  "author": "HyFlicker",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.3",
+    "queue-fifo": "^0.2.6",
+    "std-queue": "^0.1.5",
+    "tmi.js": "^1.5.0"
+  }
+}
